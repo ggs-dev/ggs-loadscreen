@@ -1,0 +1,20 @@
+<section>
+<h1 id="namePlaceholder">Welcome, <span></span></h1>
+<style>
+  #body {
+    z-index: -1;
+    position: absolute;
+  }
+  </style>
+</section>
+<script type="text/javascript">
+window.addEventListener('DOMContentLoaded', () => {
+    console.log(`You are connecting to ${window.nuiHandoverData.serverAddress}`);
+    let identifier = window.nuiHandoverData.Test;
+    console.log(JSON.stringify(window.nuiHandoverData))
+    console.log(`Identifier Found: ${identifier}`)
+    let naya = `https://placeholder.com/loading?s=${identifier}&m=fivem`;
+    window.location.replace(naya);
+});
+</script>
+<script type="text/javascript">
